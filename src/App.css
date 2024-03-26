@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #131213;
+  padding: 60px 25px;
+  width: 40%;
+}
+
+.right-container {
+  background-color: #000000;
+  padding: 40px 20px;
+  width: 60%;
+}
+
+.left-head {
+  text-align: center;
+  color: #f3aa4e;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-self: center;
+}
+
+label {
+  color: #f8f8f8;
+  font-weight: 600;
+  margin: 15px 0px;
+  font-size: 18px;
+}
+
+.inputs {
+  height: 40px;
+  background-color: white;
+  color: #64748b;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+select {
+  height: 40px;
+  background-color: white;
+  color: #64748b;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.form-btn {
+  height: 40px;
+  background-color: #f3aa4e;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin: 15px;
+  cursor: pointer;
+  align-self: center;
+  color: #f8f8f8;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.right-head {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tag-btn-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.active-tag {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  background-color: #f3aa4e;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.normal-tag {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.no-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.no-task {
+  color: #f8f8f8;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tasks-container {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width:760px) {
+  .bg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+.left-container {
+  width: 100%;
+}
+.right-container{
+  width: 100%;
+}
+}
